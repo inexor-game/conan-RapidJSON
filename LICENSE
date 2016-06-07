@@ -1,1 +1,3 @@
 SQLite (Public Domain) license
+
+Also took FindRapidjson.cmake and two lines from my conanfile.py from dwerner/conan-rapidjson.

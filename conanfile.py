@@ -6,14 +6,14 @@ class RapidJSONConan(ConanFile):
     version = '1.0.2'
     url = 'https://github.com/SamuelMarks/conan-rapidjson'
     license = 'SQLite'
-    exports = 'FindRapidjson.cmake'
+    exports = 'RapidJSONConfig.cmake'
 
     def source(self):
         self.run("git clone https://github.com/miloyip/rapidjson")
         self.run("cd rapidjson && git checkout v%s" % self.version)
 
     def package(self):
-        self.copy('FindRapidjson.cmake', '.', '.')
+        self.copy('RapidJSONConfig.cmake', '.', '.')
         self.copy('*', dst='include', src='rapidjson/include')
 
     def build(self):

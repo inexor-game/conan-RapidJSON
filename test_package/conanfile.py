@@ -5,7 +5,7 @@ import os
 
 class RapidJSONTestConan(ConanFile):
     settings = 'os', 'compiler', 'build_type', 'arch'
-    requires = 'RapidJSON/1.0.2@SamuelMarks/testing'
+    requires = "RapidJSON/1.0.2@SamuelMarks/testing"
     generators = 'cmake'
 
     def build(self):
@@ -19,4 +19,4 @@ class RapidJSONTestConan(ConanFile):
 
     def test(self):
         os.chdir('bin')
-        self.run('.%filterkey' % os.sep)
+        self.run('.%sfilterkey' % os.sep)

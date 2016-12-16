@@ -5,7 +5,7 @@ class RapidJSONConan(ConanFile):
     name = "RapidJSON"
     version = '1.0.2'
     url = 'https://github.com/SamuelMarks/conan-rapidjson'
-    license = 'SQLite'
+    license = 'MIT'
     exports = 'FindRapidJSON.cmake'
 
     def source(self):

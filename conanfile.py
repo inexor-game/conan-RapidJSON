@@ -4,7 +4,7 @@ from conans import ConanFile, CMake
 class RapidJSONConan(ConanFile):
     name = "RapidJSON"
     version = '1.0.2'
-    url = 'https://github.com/SamuelMarks/conan-rapidjson'
+    url = 'https://github.com/inexor-game/conan-RapidJSON'
     license = 'MIT'
     exports = 'FindRapidJSON.cmake'
 

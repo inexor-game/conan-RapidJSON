@@ -1,4 +1,4 @@
-All of inexor-game's and external contributions work on the packaging code are licensed under the terms of the Zlib license.
+All of inexorgame's and external contributions work on the packaging code are licensed under the terms of the Zlib license.
 
 This Conan package is a fork of https://github.com/SamuelMarks/conan-rapidjson.
 The original license file reads:

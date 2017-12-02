@@ -1,15 +1,15 @@
-from os.path import join as path_join
-from conans import ConanFile, CMake
+from conans import ConanFile
+
 
 class RapidJSONConan(ConanFile):
     name = "RapidJSON"
     version = '1.0.2'
-    url = 'https://github.com/inexor-game/conan-RapidJSON'
+    url = 'https://github.com/inexorgame/conan-RapidJSON'
     license = 'MIT'
     exports = 'FindRapidJSON.cmake'
 
     def source(self):
-        self.run("git clone https://github.com/miloyip/rapidjson")
+        self.run("git clone https://github.com/Tencent/rapidjson")
         self.run("cd rapidjson && git checkout v%s" % self.version)
 
     def package(self):

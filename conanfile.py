@@ -3,7 +3,7 @@ from conans import ConanFile
 
 class RapidJSONConan(ConanFile):
     name = "RapidJSON"
-    version = '1.0.2'
+    version = '1.1.0'
     url = 'https://github.com/inexorgame/conan-RapidJSON'
     license = 'MIT'
     exports = 'FindRapidJSON.cmake'
